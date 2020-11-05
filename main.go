@@ -5,9 +5,10 @@ import (
 	"log"
 	"net/http"
 
+	"go-simple-todo/controller"
+	"go-simple-todo/model"
+
 	_ "github.com/go-sql-driver/mysql" // mysql driver
-	"github.com/rioalamanda/go-simple-todo/controller"
-	"github.com/rioalamanda/go-simple-todo/model"
 )
 
 func main() {

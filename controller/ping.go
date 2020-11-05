@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/rioalamanda/go-simple-todo/views"
+	"go-simple-todo/views"
 )
 
 func ping() http.HandlerFunc {

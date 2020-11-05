@@ -3,7 +3,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/rioalamanda/go-simple-todo/views"
+	"go-simple-todo/views"
 )
 
 func CreateTodo(name, todo string) error {

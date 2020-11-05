@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/rioalamanda/go-simple-todo/model"
-	"github.com/rioalamanda/go-simple-todo/views"
+	"go-simple-todo/model"
+	"go-simple-todo/views"
 )
 
 func crud() http.HandlerFunc {
