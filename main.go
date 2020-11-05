@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 
 	"go-simple-todo/controller"
 	"go-simple-todo/model"
@@ -16,5 +17,6 @@ func main() {
 	db := model.Connect()
 	defer db.Close()
 	fmt.Println("Serving...")
-	log.Fatal(http.ListenAndServe(":3000", mux))
+	// log.Fatal(http.ListenAndServe(":3000", mux))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), mux))
 }
